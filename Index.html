@@ -2,18 +2,19 @@
 <html lang="en">
   <head>
     <link rel="icon" href="./img/favicon.ico " />
+    <link rel="stylessheet" href="./styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <h1>Hello, my name is Maria Albertina I am a Full Stack Web Developer</h1>
+      <h1>Hello, my name is Joao Palminha I am a Full Stack Web Developer</h1>
       <a href="#Contacts">Find out more</a>
     </header>
     <main>
       <section id="about" class="about">
-        <h2>About me</h2>
+        <h2 class="title-primary heading">"About me"</h2>
         <div>
           <img src="img/photo2.png" alt="" width="400" />
           <p>
@@ -30,16 +31,18 @@
       <section id="Projects" class="Projects">
         <h2>Projects</h2>
         <article>
-          <h3>Project 1</h3>
-          <p>
-            is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's standard dummy text ever since the
-            1500s, when an unknown printer took a galley of type and scrambled
-            it to make a
-          </p>
-          <a href="">Source Code</a>
-          <a href="">View Project</a>
-          ><img src="./img/Rectangle 52.png" alt="" />
+          <div>
+            <h3>Project 1</h3>
+            <p>
+              is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a
+            </p>
+            <a href="">Source Code</a>
+            <a href="">View Project</a>
+            ><img src="./img/Rectangle 52.png" alt="" />
+          </div>
         </article>
         <article>
           <h3>Project 2</h3>
@@ -79,7 +82,16 @@
       </section>
     </main>
     <footer>
-      <ul>
+      <ul
+        style="
+          margin: 0; /* padding-left: 0; */
+          list-style-type: none;
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+        "
+        class
+      >
         <li>
           <a href="">Linkedin</a>
         </li>
@@ -93,7 +105,7 @@
           <a href="">Dev.to</a>
         </li>
       </ul>
-      <p>@2023 - Portfolio Design by Maria Albertina</p>
+      <p>@2023 - Portfolio Design by Joao Palminha</p>
     </footer>
   </body>
 </html>
