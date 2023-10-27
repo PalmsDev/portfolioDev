@@ -1,29 +1,29 @@
 :root {
-  --colour-primary: blue;
+  --colour-primary: rgb(142, 115, 21);
   --colour-secondary: rgb(184, 142, 142);
-  --colour-tertiary: rgb(139, 58, 58);
+  --colour-tertiary: rgb(255, 255, 255);
 }
 
 h2 {
   color: var(--colour-primary);
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1 {
   color: var(--colour-secondary);
   font-style: normal;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Verdana, Geneva;
 }
 
 h3 {
-  color: var(--colour-tertiary);
+  color: var(--colour-secondary);
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .body {
-  background-color: rgb(120, 207, 203);
+  background-color: rgb(29, 125, 120);
 }
 
 .heading {
@@ -39,4 +39,40 @@ h3 {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media (min-width: 1024px) {
+  .article {
+    display: flex;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 15px;
+  border-radius: 5px;
+  border: 2px solid var(--colour-secondary);
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: all;
+}
+.button-secondary {
+  background-color: var(--colour-secondary);
+  color: var(--colour-tertiary);
+}
+
+.button-secondary:hover {
+background-color: var(--colour-tertiary);
+color: var(--colour-secondary);
+}
+
+.button-primary:hover {
+background-color: var(--colour-secondary);
+color: var(--colour-tertiary);
+}
+
+
+.button-primary {
+  color: var(--colour-secondary);
 }
