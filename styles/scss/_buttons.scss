@@ -1,0 +1,28 @@
+.button {
+  display: inline-block;
+  padding: 14px 15px;
+  border-radius: 5px;
+  border: 2px solid $colour-secondary;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: all;
+}
+.button-secondary {
+  background-color: $colour-secondary;
+  color: $colour-tertiary;
+
+  &:hover {
+    background-color: $colour-tertiary;
+    color: $colour-secondary;
+  }
+}
+
+.button-primary:hover {
+  background-color: $colour-secondary;
+  color: $colour-tertiary;
+}
+
+.button-primary {
+  color: $colour-secondary;
+}
