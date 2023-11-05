@@ -21,6 +21,10 @@ header {
   align-items:center
 }
 
+.about .img-myself {
+text-align: center;
+}
+
 .headerlogo {
   max-width: 50px;
   position:relative;
@@ -81,6 +85,22 @@ h3 {
   }
 }
 
+.main-button {
+  display:inline-block;
+  padding: 10px 11px;
+  border-radius: 15px;
+  border: 2px solid var(--colour-secondary);
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: all
+}
+
+.main-button:hover {
+  background-color: var(--colour-tertiary);
+  color: var(--colour-secondary);
+}
+
 .button {
   display: inline-block;
   padding: 14px 15px;
@@ -91,6 +111,7 @@ h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   transition: all;
 }
+
 .button-secondary {
   background-color: var(--colour-secondary);
   color: var(--colour-tertiary);
